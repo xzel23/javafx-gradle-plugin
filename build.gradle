@@ -6,8 +6,8 @@ plugins {
     id 'maven-publish'
 }
 
-group 'org.openjfx'
-version '0.0.10-SNAPSHOT'
+group 'com.dua3.gradle'
+version '0.0.9'
 
 sourceCompatibility = 11
 targetCompatibility = 11
@@ -36,17 +36,17 @@ test {
 gradlePlugin {
     plugins {
         javafxPlugin {
-            id = 'org.openjfx.javafxplugin'
-            displayName = 'JavaFX Gradle Plugin'
-            description = 'Plugin that makes it easy to work with JavaFX'
+            id = 'com.dua3.javafxgradle7plugin'
+            displayName = 'JavaFX Gradle 7 Plugin'
+            description = 'Plugin that makes it easy to work with JavaFX and Gradle 7+ (JDK 16+)'
             implementationClass = 'org.openjfx.gradle.JavaFXPlugin'
         }
     }
 }
 
 pluginBundle {
-    website = 'https://github.com/openjfx/javafx-gradle-plugin'
-    vcsUrl = 'https://github.com/openjfx/javafx-gradle-plugin'
+    website = 'https://github.com/xzel23/javafx-gradle-plugin'
+    vcsUrl = 'https://github.com/xzel23/javafx-gradle-plugin.git'
     tags = [ 'java', 'javafx' ]
 }
 
@@ -54,7 +54,7 @@ publishing {
     publications {
         maven(MavenPublication) {
             groupId = project.group
-            artifactId = 'javafx-gradle-plugin'
+            artifactId = 'javafx-gradle7-plugin'
             version = project.version
 
             from components.java
