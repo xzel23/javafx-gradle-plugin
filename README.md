@@ -1,3 +1,9 @@
+**IMPORTANT NOTE**
+
+The upstream project was updated to work correctly with newer JDK/Gradle version, this fork is not needed anymore.
+
+---------
+
 # JavaFX Gradle 7 Plugin
 
 Simplifies working with JavaFX 11+ for gradle projects. This is is a fork I created to have a plugin version compatible with Gradle 7.
